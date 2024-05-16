@@ -1,18 +1,25 @@
 body {
     background-color: #EEEED2; 
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh; /* Full viewport height */
 }
 
 h1 {
     text-align: center;
     font-family: "Akaya Kanadaka";
     font-size: 64px;
+    margin-top: 20px;
 }
 
 .akaya-kanadaka-regular {
     font-family: "Akaya Kanadaka", system-ui;
     font-weight: 400;
     font-style: normal;
-  }
+}
 
 .button1 {
     color: white;
@@ -25,6 +32,7 @@ h1 {
     font-size: 36px;
     font-family: "Akaya Kanadaka";
     cursor: pointer;
+    margin: 10px 0;
 }
 
 .button2 {
@@ -38,4 +46,34 @@ h1 {
     font-size: 36px;
     font-family: "Akaya Kanadaka";
     cursor: pointer;
+    margin: 10px 0;
+}
+
+
+.chessboard-controls {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#chessboard {
+    display: grid;
+    gap: 1px;
+    margin-top: 20px;
+}
+
+.cell {
+    width: 50px;
+    height: 50px;
+}
+
+.white {
+    background-color: #FFFCFC;
+}
+
+.black {
+    background-color: #000000;
+}
+
+.text1 {
+    font-family: "Akaya Kanadaka";
 }
