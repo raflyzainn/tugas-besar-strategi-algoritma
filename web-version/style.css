@@ -1,0 +1,41 @@
+body {
+    background-color: #EEEED2; 
+}
+
+h1 {
+    text-align: center;
+    font-family: "Akaya Kanadaka";
+    font-size: 64px;
+}
+
+.akaya-kanadaka-regular {
+    font-family: "Akaya Kanadaka", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+.button1 {
+    color: white;
+    background-color: #769656;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    width: 256px;
+    height: 70px;
+    font-size: 36px;
+    font-family: "Akaya Kanadaka";
+    cursor: pointer;
+}
+
+.button2 {
+    color: white;
+    background-color: #769656;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    width: 287px;
+    height: 70px;
+    font-size: 36px;
+    font-family: "Akaya Kanadaka";
+    cursor: pointer;
+}
