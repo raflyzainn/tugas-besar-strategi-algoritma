@@ -5,20 +5,53 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    height: 100vh; /* Full viewport height */
+    height: 100vh; 
+    font-family: "Akaya Kanadaka", system-ui;
 }
 
 h1 {
     text-align: center;
-    font-family: "Akaya Kanadaka";
     font-size: 64px;
     margin-top: 20px;
 }
 
-.akaya-kanadaka-regular {
-    font-family: "Akaya Kanadaka", system-ui;
-    font-weight: 400;
-    font-style: normal;
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+#chessboard {
+    display: grid;
+    gap: 1px;
+    margin-bottom: 20px; 
+}
+
+.cell {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px; 
+    color: red; 
+}
+
+.white {
+    background-color: #FFFCFC;
+}
+
+.black {
+    background-color: #000000;
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px; 
 }
 
 .button1 {
@@ -63,31 +96,26 @@ h1 {
     margin: 10px 0;
 }
 
+.button4 {
+    color: white;
+    background-color: #769656;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    width: 200px;
+    height: 55px;
+    font-size: 36px;
+    font-family: "Akaya Kanadaka";
+    cursor: pointer;
+    margin: 10px 0;
+}
+
 .chessboard-controls {
     margin-top: 20px;
     text-align: center;
 }
 
-#chessboard {
-    display: grid;
-    gap: 1px;
-    margin-top: 20px;
-}
-
-.cell {
-    width: 50px;
-    height: 50px;
-}
-
-.white {
-    background-color: #FFFCFC;
-}
-
-.black {
-    background-color: #000000;
-}
-
 .text1 {
-    font-family: "Akaya Kanadaka";
-    font-size: 25px;
+    font-size: 30px;
+    margin-bottom: 10px;
 }
