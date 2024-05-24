@@ -26,7 +26,7 @@ function createChessboard() {
         }
     }
 
-    // Place the knight icon on the starting cell
+    // Knights memulai dari index ke [0,0]
     const startCell = chessboard.children[0];
     startCell.innerHTML = '<i class="fa-solid fa-chess-knight"></i>';
 }
@@ -55,7 +55,8 @@ function solveBacktracking() {
                 if (solveKTUtil(next_x, next_y, movei + 1, board, moves)) {
                     return true;
                 } else {
-                    board[next_x][next_y] = -1; // backtracking
+                    // Memulai atau mencoba backtracking backtracking
+                    board[next_x][next_y] = -1; 
                 }
             }
         }
@@ -63,7 +64,8 @@ function solveBacktracking() {
     }
 
     function solveKT() {
-        board[0][0] = 0; // Starting from the first cell
+        // Memulai memecahkan masalah dari index [0,0]
+        board[0][0] = 0; 
         if (!solveKTUtil(0, 0, 1, board, moves)) {
             alert("Solution does not exist");
             return false;
@@ -157,7 +159,7 @@ function animateSolution(board) {
         if (step > 0) {
             const prevCellIndex = knightPos[0] * boardSize + knightPos[1];
             const prevCell = chessboard.children[prevCellIndex];
-            prevCell.innerHTML = step - 1; // Leave the step number
+            prevCell.innerHTML = step - 1;
         }
 
         if (step < boardSize * boardSize) {
