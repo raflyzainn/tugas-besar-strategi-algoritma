@@ -168,7 +168,7 @@ function animateSolution(board) {
             const cellIndex = nextMove[0] * boardSize + nextMove[1];
             const cell = chessboard.children[cellIndex];
             cell.innerHTML = '<i class="fa-solid fa-chess-knight"></i>';
-            setTimeout(() => highlightMove(step + 1), 600); 
+            setTimeout(() => highlightMove(step + 1), 500); 
         }
     }
 
